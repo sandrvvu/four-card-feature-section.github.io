@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+--red: hsl(0, 78%, 62%);
+--cyan: hsl(180, 62%, 55%);
+--orange: hsl(34, 97%, 64%);
+--blue: hsl(212, 86%, 64%);
+--very-dark-blue: hsl(234, 12%, 34%);
+--grayish-blue: hsl(229, 6%, 66%);
+--very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+    color: var(--very-dark-blue);
+}
+
+.header {
+    margin: 3rem auto;
+    padding: 0 3rem;
+    text-align: center;
+    width: 100%;
+    max-width: 560px;
+}
+
+.header-title {
+    font-weight: 200;
+    font-size: 1.7rem;
+    line-height: 35px;
+}
+
+.header-subtitle {
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.header-paragraph {
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
+
+.cards {
+    margin: 1rem 8% 0;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.card {
+    max-width: 350px;
+    border-radius: .5rem;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 1rem 2rem .5rem #dedede;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.7rem;
+    gap: 1.7rem;
+}
+
+.supervisor {
+    border-top: .3rem solid var(--cyan);
+}
+
+.team-builder {
+    border-top: .3rem solid var(--red);
+}
+
+.karma {
+    border-top: .3rem solid var(--orange);
+}
+
+.calculator {
+    border-top: .3rem solid var(--blue);
+}
+
+.card-title{
+    font-size: 1.25rem;
+}
+
+.card-paragraph{
+    font-size: 0.8rem;
+    color: var(--grayish-blue);
+}
+
+.card-image {
+    padding-top: 1rem;
+    float : right
+}
+
+img {
+    max-width: 50px;
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .col {
+        margin: 0;
+        gap: 0;
+    }
+
+    .card {
+        margin-bottom: 1.7rem;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .header-title ,  .header-subtitle {
+        font-size: 1.4rem;
+    }
+}
+
